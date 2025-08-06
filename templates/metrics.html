@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Metrics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        img {
+            width: 500px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 Model Evaluation Report</h1>
+
+    <pre>{{ metrics_text }}</pre>
+
+    <h2>Confusion Matrix</h2>
+    <img src="/static/images/confusion_matrix.png" alt="Confusion Matrix">
+
+    <h2>ROC Curve</h2>
+    <img src="/static/images/roc_curve.png" alt="ROC Curve">
+
+    <a href="/">← Back to Prediction Form</a>
+</body>
+</html>
